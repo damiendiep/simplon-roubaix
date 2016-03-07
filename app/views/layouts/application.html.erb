@@ -10,8 +10,7 @@
   <%= stylesheet_link_tag "materialize" %>
   <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!-- ///////////////////////    NAVBAR     ///////////////////// -->
@@ -26,10 +25,10 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-right" id="monmenu">
 				<ul id="ul" class="nav navbar-nav">
-          <li><a href="home">Accueil</a></li>
-					<li><a href="general">Simplon.co</a></li>
-					<li><a href="adep">ADEP</a></li>
-					<li><a href="contact">Contact</a></li>
+          <li><%= link_to "Accueil", home_path %></li>
+					<li><%= link_to "Simplon.co", general_path %></li>
+          <li><%= link_to "Adep", adep_path %></li>
+					<li><%= link_to "Contact", contact_path %></li>
 				</ul>
 			</div>
 		</div>
